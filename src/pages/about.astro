@@ -1,7 +1,17 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import NavBar from '../components/Navigation.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
+import '../styles/style.css';
 ---
+
+<NavBar />
+
+<body>
+
+  <div class="emergency-bar">
+    ⚠ Emergency Tree Service Available Across Portland & Southern Maine
+  </div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,27 +28,6 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
     Owner-Operated • ISA TRAQ Certified Arborist
   </div>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container navbar">
-
-      <a href="index.html" class="site-title">
-        {SITE_TITLE}
-      </a>
-
-      <nav class="nav-links">
-        <a href="index">Home</a>
-        <a href="about">About</a>
-        <a href="photos">Photos</a>
-
-        <a href="tel:+12075551234" class="nav-call-btn">
-          Call Us
-        </a>
-      </nav>
-
-    </div>
-  </header>
-
   <!-- HERO -->
   <section class="hero">
 
@@ -51,14 +40,14 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
         </div>
 
         <h1>
-          Professional Tree Care From An ISA TRAQ Certified Arborist
+          Professional Tree Care From An ISA Certified Arborist
         </h1>
 
         <p>
-          Evergreen Arborist is an owner-operated tree care company focused on
+          By the Books is an owner-operated tree care company focused on
           safe, ethical, and science-based arboriculture. We provide expert
           guidance and hands-on care to help clients protect the health,
-          structure, and long-term value of their trees.
+          structure, and long-term value of their trees. 
         </p>
 
       </div>
@@ -231,7 +220,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
       </h2>
 
       <p>
-        Contact Evergreen Arborist today for expert tree care and consultations.
+        Contact By the Books Tree Care today for expert tree care and consultations.
       </p>
 
       <a href="tel:+12075551234" class="btn btn-primary">
@@ -244,7 +233,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
 
   <!-- FOOTER -->
   <footer>
-    © 2026 Evergreen Arborist. All rights reserved.
+    © 2026 By the Books Tree Care. All rights reserved.
   </footer>
 
 </body>

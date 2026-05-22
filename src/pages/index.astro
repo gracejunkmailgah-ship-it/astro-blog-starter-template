@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import NavBar from '../components/Navigation.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
 import '../styles/style.css';
 ---
@@ -23,30 +24,9 @@ import '../styles/style.css';
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<!-- HEADER -->
-  <header class="site-header">
-    <div class="container navbar">
 
-      <!-- SITE TITLE -->
-      <a href="index" class="site-title">
-        By the Books Tree Care
-      </a>
+<NavBar />
 
-      <!-- NAVIGATION -->
-      <nav class="nav-links">
-        <a href="index">Home</a>
-        <a href="about">About</a>
-        <a href="services">Services</a>
-        <a href="photos">Photos</a>
-<!-- CALL BUTTON -->
-      <a href="tel:+19708197459" class="nav-call-btn">
-        Call Us
-      </a>
-      </nav>
-
-    </div>
-    </div>
-  </header>
 <body>
 
   <div class="emergency-bar">

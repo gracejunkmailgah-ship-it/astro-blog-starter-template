@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Navigation from '/navigation.astro'
+import Navigation from '../components/Navigation.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
 import '../styles/style.css';
 ---
@@ -24,7 +24,7 @@ import '../styles/style.css';
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<div id="navigation"></div>
+<Navigation />
 
         <h1>
 {SITE_TITLE}

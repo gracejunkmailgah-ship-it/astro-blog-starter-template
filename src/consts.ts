@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "By the Books Tree Care";
 export const SITE_DESCRIPTION = "ISA Certified Arborist serving Southern Maine";
+export const SITE_PHONE = "+19708197459"; 

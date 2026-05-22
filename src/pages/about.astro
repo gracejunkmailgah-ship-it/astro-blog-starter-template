@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -7,12 +8,10 @@ import Layout from '../layouts/BlogPost.astro';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>About | Evergreen Arborist</title>
+  <title>About | Sam Books</title>
 
   <link rel="stylesheet" href="style.css" />
 </head>
-
-<body>
 
   <!-- TOP BAR -->
   <div class="emergency-bar">
@@ -24,13 +23,13 @@ import Layout from '../layouts/BlogPost.astro';
     <div class="container navbar">
 
       <a href="index.html" class="site-title">
-        Evergreen Arborist
+        {SITE_TITLE}
       </a>
 
       <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="photos.html">Photos</a>
+        <a href="index">Home</a>
+        <a href="about">About</a>
+        <a href="photos">Photos</a>
 
         <a href="tel:+12075551234" class="nav-call-btn">
           Call Us
@@ -48,7 +47,7 @@ import Layout from '../layouts/BlogPost.astro';
       <div style="max-width: 760px; padding: 80px 0; position: relative; z-index: 2;">
 
         <div class="eyebrow">
-          About Evergreen Arborist
+          About Sam Books
         </div>
 
         <h1>

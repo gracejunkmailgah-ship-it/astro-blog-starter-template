@@ -1,9 +1,29 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import NavBar from '../components/Navigation.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
 import '../styles/style.css';
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ISA Certified Arborist Portland Maine | By the Books Tree Care</title>
+
+  <meta
+    name="description"
+    content="ISA Certified Arborist serving Portland, Maine. Professional tree pruning, tree removals, stump grinding, storm cleanup, and TRAQ tree risk assessments."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
 <NavBar />
 
 <body>

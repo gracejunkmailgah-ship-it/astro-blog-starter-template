@@ -1,7 +1,4 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import NavBar from '../components/Navigation.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_PHONE } from '../consts';
 import '../styles/style.css';
@@ -9,6 +6,15 @@ import '../styles/style.css';
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- uncommentme <link rel="canonical" href="https://bookstreecare.com/" /> -->
+
+<meta property="og:title" content="ISA Certified Arborist Portland Maine" />
+<meta property="og:description" content="Professional tree pruning, tree removals, storm cleanup & arborist services in Portland Maine." />
+<meta property="og:type" content="website" />
+<!-- uncommentme <meta property="og:url" content="https://bookstreecare.com/" />-->
+
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0f3d2e" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -41,17 +47,21 @@ import '../styles/style.css';
           ISA Certified Arborist • TRAQ Qualified • Fully Insured
         </div>
 
-        <h1>
-{SITE_TITLE}
-        </h1>
-
+    <h1>
+      ISA Certified Arborist in Portland, Maine
+    </h1>
+    <p class="hero-company-name">
+      By the Books Tree Care
+     </p>
         <p>
          Modern tree care rooted in safety & integrity. At {SITE_TITLE} we pride ourselves in providing professional tree pruning, removals, stump grinding, 
           storm cleanup, and science-based tree preservation for homeowners throughout Portland and Southern Maine.
         </p>
 
         <div class="hero-buttons">
-          <a href="tel:+19708197459" class="btn btn-primary">
+          <a href="tel:+19708197459" 
+              class="btn btn-primary"
+              aria-label="Call By the Books Tree Care">
             Call Now
           </a>
 
@@ -88,6 +98,26 @@ import '../styles/style.css';
     </div>
   </header>
 
+<section class="quick-cta">
+  <div class="container quick-cta-inner">
+
+    <div>
+      <h2>Need Tree Work Done Safely & Professionally?</h2>
+      <p>
+        Call now for a free estimate from an ISA Certified Arborist serving Portland & Southern Maine.
+      </p>
+    </div>
+
+    <a
+      href="tel:+19708197459"
+      class="btn btn-primary"
+      aria-label="Call By the Books Tree Care"
+    >
+      📞 Call (970) 819-7459
+    </a>
+
+  </div>
+</section>
   <!-- SERVICES -->
 
   <section>
@@ -215,7 +245,37 @@ import '../styles/style.css';
 
     </div>
   </section>
+<!-- SERVICE AREAS -->
 
+<section class="service-areas">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Service Area</span>
+      <h2>Serving Portland & Southern Maine</h2>
+
+      <p>
+        Providing professional arborist services throughout Cumberland County and surrounding communities.
+      </p>
+    </div>
+
+    <div class="areas-grid">
+
+      <div class="area-card">Portland</div>
+      <div class="area-card">South Portland</div>
+      <div class="area-card">Westbrook</div>
+      <div class="area-card">Falmouth</div>
+      <div class="area-card">Yarmouth</div>
+      <div class="area-card">Cape Elizabeth</div>
+      <div class="area-card">Scarborough</div>
+      <div class="area-card">Cumberland</div>
+      <div class="area-card">Freeport</div>
+      <div class="area-card">Gorham</div>
+
+    </div>
+
+  </div>
+</section>
   <!-- CONTACT -->
 
   <section id="contact">
@@ -243,7 +303,9 @@ import '../styles/style.css';
 
             <div class="contact-item">
               <strong>Phone</strong><br>
-              <a href="tel:+19708197459">(970) 819-7459</a>
+              <a href="tel:+19708197459"
+              aria-label="Call By the Books Tree Care">
+(970) 819-7459</a>
             </div>
 
             <div class="contact-item">
@@ -317,7 +379,8 @@ import '../styles/style.css';
       Fast response. Honest advice. Professional tree care.
     </p>
 
-    <a href="tel:+19708197459" class="btn btn-primary">
+    <a href="tel:+19708197459" class="btn btn-primary"
+    aria-label="Call By the Books Tree Care">
       Call Now
     </a>
   </section>
@@ -336,9 +399,22 @@ import '../styles/style.css';
 
   <!-- STICKY CALL BUTTON -->
 
-  <a href="tel:+19708197459" class="sticky-call">
+  <a href="tel:+19708197459" class="sticky-call"
+aria-label="Call By the Books Tree Care">
     📞 Call Now
   </a>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TreeService",
+  "name": "By the Books Tree Care",
+  "telephone": "+1-970-819-7459",
+  "areaServed": "Portland, Maine",
+ <!-- uncommentme "url": "https://bookstreecare.com", -->
+  "description": "ISA Certified Arborist serving Portland and Southern Maine.",
+  "priceRange": "$$"
+}
+</script>
 </body>
 </html>

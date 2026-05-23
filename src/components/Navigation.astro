@@ -1,23 +1,42 @@
-<!-- HEADER -->
-  <header class="site-header">
-    <div class="container navbar">
+<header class="site-header">
+  <div class="container navbar">
 
-      <!-- SITE TITLE -->
-      <a href="index" class="site-title">
-        By the Books Tree Care
-      </a>
+    <a href="/" class="site-title">
+      By the Books Tree Care
+    </a>
 
-      <!-- NAVIGATION -->
-      <nav class="nav-links">
-        <a href="index">Home</a>
-        <a href="about">About</a>
-        <a href="services">Services</a>
-        <a href="photos">Photos</a>
-<!-- CALL BUTTON -->
+    <!-- MOBILE BUTTON -->
+
+    <button
+      class="menu-toggle"
+      aria-label="Toggle navigation"
+    >
+      ☰
+    </button>
+
+    <!-- NAV -->
+
+    <nav class="nav-links">
+
+      <a href="/index">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/photos">Photos</a>
+
       <a href="tel:+19708197459" class="nav-call-btn">
         Call Us
       </a>
-      </nav>
 
-    </div>
-  </header>
+    </nav>
+
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
